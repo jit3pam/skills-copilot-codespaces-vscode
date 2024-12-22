@@ -56,3 +56,17 @@ var app = http.createServer(function(request,response){
                 <form action="/create_process" method="post">
                     <p><input type="text" name="title" placeholder="title"></p>
                     <p>
+
+                    <textarea name="description" placeholder="description"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit">
+                    </p>
+                </form>
+            `, '');
+            response.writeHead(200);
+            response.end(html);
+        }
+        );
+    }
+});
